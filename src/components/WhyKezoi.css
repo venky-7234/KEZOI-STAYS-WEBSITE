@@ -1,0 +1,39 @@
+.why-kezoi {
+  background-color: var(--color-dark);
+}
+
+.why-kezoi .section-header {
+  margin-bottom: 60px;
+}
+
+.points-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+  .points-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+
+.point-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+}
+
+.point-title {
+  font-size: 1.8rem;
+  color: var(--color-ivory);
+  margin-bottom: 15px;
+}
+
+.point-desc {
+  font-size: 1.1rem;
+  color: var(--color-grey);
+  font-weight: 300;
+  line-height: 1.6;
+}

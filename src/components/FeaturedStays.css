@@ -1,0 +1,141 @@
+.featured-stays {
+  background-color: var(--color-dark);
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .section-header {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--color-ivory);
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3.5rem;
+  }
+}
+
+.view-all-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-gold);
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.view-all-link:hover {
+  transform: translateX(5px);
+}
+
+.stays-list {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.stay-card {
+  width: 100%;
+}
+
+.stay-image-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 1024px) {
+  .stay-image-container {
+    aspect-ratio: 21/9;
+  }
+}
+
+.stay-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.stay-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 61, 52, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.stay-card:hover .stay-image {
+  transform: scale(1.05);
+}
+
+.stay-card:hover .stay-overlay {
+  opacity: 1;
+}
+
+.stay-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stay-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+@media (min-width: 768px) {
+  .stay-header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.stay-name {
+  font-size: 2rem;
+  color: var(--color-ivory);
+  font-family: var(--font-heading);
+}
+
+.stay-price {
+  font-size: 1.1rem;
+  color: var(--color-gold);
+  font-weight: 400;
+}
+
+.stay-location {
+  font-size: 1.1rem;
+  color: var(--color-grey);
+}
+
+.stay-details {
+  font-size: 1rem;
+  color: var(--color-grey);
+  font-weight: 300;
+}
