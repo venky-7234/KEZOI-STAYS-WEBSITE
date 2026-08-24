@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
-import Lenis from 'lenis';
+import Lenis from '@studio-freight/lenis';
 
 import Header from './Header';
 import Footer from './Footer';
