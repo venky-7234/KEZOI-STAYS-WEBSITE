@@ -64,8 +64,7 @@ const Hero = () => {
       
       <div className="hero-content">
         <img 
-          src="/logo.svg" 
-          alt="Kezoi Stays" 
+          src="/logo.svg"  
           style={{ height: '80px', width: 'auto', marginBottom: '30px', marginInline: 'auto' }} 
         />
         <h1 ref={textRef} className="hero-title">
