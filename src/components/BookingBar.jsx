@@ -1,11 +1,24 @@
 import React from 'react';
-import { Calendar, Users, PhoneCall } from 'lucide-react';
+import { Calendar, Users, PhoneCall, Building, ChevronDown } from 'lucide-react';
 import './BookingBar.css';
 
 const BookingBar = () => {
   return (
     <div className="booking-bar-container">
       <div className="booking-bar-main">
+        
+        <div className="booking-field">
+          <Building className="booking-icon" />
+          <div className="booking-info">
+            <span className="booking-label">Property</span>
+            <span className="booking-value" style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+              Select your Preferred Hotel <ChevronDown size={16} />
+            </span>
+          </div>
+        </div>
+        
+        <div className="booking-divider"></div>
+
         <div className="booking-field">
           <Calendar className="booking-icon" />
           <div className="booking-info">
