@@ -18,9 +18,32 @@
   }
 }
 
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-eyebrow {
+  color: var(--color-gold);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.section-desc {
+  color: var(--color-grey);
+  font-size: 1.1rem;
+}
+
 .section-title {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 400;
   font-size: 2.5rem;
   color: var(--color-ivory);
+  margin: 0;
 }
 
 @media (min-width: 768px) {

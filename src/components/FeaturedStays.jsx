@@ -62,8 +62,12 @@ const FeaturedStays = () => {
   return (
     <section className="featured-stays section-padding" id="stays" ref={sectionRef}>
       <div className="section-header">
-        <h2 className="section-title">Featured Stays</h2>
-        <a href="#all" className="view-all-link">View All Stays <ArrowRight size={18} /></a>
+        <div className="header-text">
+          <span className="section-eyebrow">Explore Places Made For You</span>
+          <h2 className="section-title">Find Your Kind of Stay</h2>
+          <p className="section-desc">Some top stays</p>
+        </div>
+        <a href="#all" className="view-all-link">Explore More <ArrowRight size={18} /></a>
       </div>
       
       <div className="stays-list">
