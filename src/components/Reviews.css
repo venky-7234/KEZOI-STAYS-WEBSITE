@@ -1,5 +1,23 @@
 .reviews {
   background-color: var(--color-white);
+  position: relative;
+  padding-top: 100px;
+}
+
+.reviews::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-color: var(--color-dark);
+  z-index: 0;
+}
+
+.reviews-header, .reviews-grid {
+  position: relative;
+  z-index: 1;
 }
 
 .reviews-header {
@@ -12,7 +30,7 @@
   font-style: italic;
   font-weight: 400;
   font-size: 2.5rem;
-  color: var(--color-dark);
+  color: var(--color-ivory);
   margin: 0;
 }
 

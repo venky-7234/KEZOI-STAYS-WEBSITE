@@ -73,7 +73,7 @@ const Reviews = () => {
   return (
     <section className="reviews section-padding" ref={sectionRef}>
       <div className="reviews-header">
-        <h2 className="section-title">Stories From Our Guests</h2>
+        <h2 className="section-title">Testimonials</h2>
       </div>
       
       <div className="reviews-grid">
