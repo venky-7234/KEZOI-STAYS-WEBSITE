@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import BookingBar from '../components/BookingBar';
 import About from '../components/About';
 import FeaturedStays from '../components/FeaturedStays';
 import Experience from '../components/Experience';
@@ -16,6 +17,7 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <BookingBar />
       <About />
       <FeaturedStays />
       <Experience />
