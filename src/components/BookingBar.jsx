@@ -12,7 +12,7 @@ const BookingBar = () => {
           <div className="booking-info">
             <span className="booking-label">Property</span>
             <span className="booking-value" style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-              Select your Preferred Hotel <ChevronDown size={16} />
+              Select your Preferred Stay <ChevronDown size={16} />
             </span>
           </div>
         </div>
