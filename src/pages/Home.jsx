@@ -20,10 +20,10 @@ const Home = () => {
       <BookingBar />
       <About />
       <FeaturedStays />
+      <Gallery />
       <Experience />
       <BrandStatement />
       <Locations />
-      <Gallery />
       <WhyKezoi />
       <Reviews />
       <LongStay />
