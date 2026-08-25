@@ -67,6 +67,10 @@ const Gallery = () => {
           </div>
         ))}
       </div>
+
+      <div className="gallery-footer">
+        <p>Share your stay photos with us on Instagram <a href="https://instagram.com/kezoistays" target="_blank" rel="noopener noreferrer">@kezoistays</a></p>
+      </div>
     </section>
   );
 };

@@ -96,3 +96,22 @@
   gap: 6px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+/* Gallery Footer */
+.gallery-footer {
+  text-align: center;
+  margin-top: 50px;
+  color: var(--color-grey);
+  font-size: 1.1rem;
+}
+
+.gallery-footer a {
+  color: var(--color-gold);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.gallery-footer a:hover {
+  text-decoration: underline;
+}
