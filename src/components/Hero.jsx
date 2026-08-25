@@ -83,11 +83,8 @@ const Hero = () => {
           <button className="btn-outline">Book Now</button>
         </div>
       </div>
+
       
-      <div className="scroll-indicator">
-        <span>Scroll to explore</span>
-        <ChevronDown size={24} className="bounce-icon" />
-      </div>
     </section>
   );
 };
