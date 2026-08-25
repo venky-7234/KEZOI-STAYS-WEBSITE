@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/TG-0001",
+      "destination": "https://kezoi-stays-tg-0001.vercel.app/TG-0001"
+    },
+    {
       "source": "/TG-0001/(.*)",
       "destination": "https://kezoi-stays-tg-0001.vercel.app/TG-0001/$1"
     }
