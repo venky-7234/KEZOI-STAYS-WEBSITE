@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-brand">
-            <img src={logo} alt="Kezoi Stays Logo" className="footer-logo-img" style={{ height: '70px', width: 'auto', marginBottom: '15px' }} />
+            <img src={logo} alt="Kezoi Stays Logo" className="footer-logo-img" style={{ height: '100px', width: 'auto', marginBottom: '15px' }} />
             <p className="footer-desc">
               Premium short-stay and serviced apartments in Hyderabad, designed for guests who value comfort, privacy and refined living.
             </p>
