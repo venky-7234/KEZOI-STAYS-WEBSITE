@@ -51,9 +51,9 @@ const About = () => {
     <section className="about section-padding" id="about" ref={sectionRef}>
       <div className="about-container">
         <div className="about-text" ref={textRef}>
-          <h2 className="about-heading">A Better Way<br />to Stay</h2>
+          <h2 className="about-heading">Why Settle for Ordinary When You Can Stay Better?</h2>
           <p className="about-desc">
-            Kezoi Stays offers carefully selected premium apartments in Hyderabad, designed for guests who value comfort, privacy and refined living.
+            Kezoi Stays brings you thoughtfully selected spaces designed for comfort, relaxation and unforgettable moments. From city escapes to peaceful retreats, every stay is created to feel special.
           </p>
         </div>
         <div className="about-image-wrapper">
