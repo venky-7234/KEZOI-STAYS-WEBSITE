@@ -24,15 +24,19 @@
 }
 
 .about-heading {
-  font-size: 3rem;
-  line-height: 1.1;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 1.2;
   margin-bottom: 30px;
   color: var(--color-dark);
+  letter-spacing: 0.5px;
 }
 
 @media (min-width: 768px) {
   .about-heading {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 }
 
