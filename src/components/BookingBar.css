@@ -30,7 +30,7 @@
 }
 
 .booking-icon {
-  color: #cda869; /* Theme gold color */
+  color: var(--color-gold); /* Theme gold color */
   width: 20px;
   height: 20px;
   stroke-width: 1.5;
@@ -43,20 +43,20 @@
 
 .booking-label {
   font-size: 0.75rem;
-  color: #666;
+  color: var(--color-grey);
   font-weight: 500;
 }
 
 .booking-value {
   font-size: 0.9rem;
-  color: #333;
+  color: var(--color-dark);
   font-weight: 600;
 }
 
 .booking-divider {
   width: 1px;
   height: 30px;
-  background-color: #eee;
+  background-color: rgba(15, 61, 52, 0.1);
   display: none;
 }
 
@@ -73,8 +73,9 @@
 }
 
 .booking-btn {
-  background-color: #000;
-  color: white;
+  background-color: var(--color-gold);
+  color: var(--color-white, #fff); /* Fallback to white if not defined, but maybe use var(--color-dark) for better contrast on gold */
+  color: var(--color-dark);
   border: none;
   padding: 12px 20px;
   border-radius: 6px;
@@ -86,13 +87,13 @@
 }
 
 .booking-btn:hover {
-  background-color: #333;
+  background-color: var(--color-gold-hover);
 }
 
 .callback-btn-compact {
   background-color: transparent;
-  color: #0f3d34;
-  border: 1px solid #0f3d34;
+  color: var(--color-dark);
+  border: 1px solid var(--color-dark);
   padding: 11px 16px;
   border-radius: 6px;
   font-weight: 600;
@@ -106,6 +107,6 @@
 }
 
 .callback-btn-compact:hover {
-  background-color: #0f3d34;
-  color: white;
+  background-color: var(--color-dark);
+  color: var(--color-ivory);
 }
