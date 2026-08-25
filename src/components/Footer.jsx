@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, Hash } from 'lucide-react';
+import logo from '../assets/logo.svg';
 import './Footer.css';
 
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-brand">
-            <img src="/logo.svg" alt="Kezoi Stays Logo" className="footer-logo-img" style={{ height: '40px', width: 'auto', marginBottom: '15px' }} />
+            <img src={logo} alt="Kezoi Stays Logo" className="footer-logo-img" style={{ height: '40px', width: 'auto', marginBottom: '15px' }} />
             <p className="footer-desc">
               Premium short-stay and serviced apartments in Hyderabad, designed for guests who value comfort, privacy and refined living.
             </p>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.svg';
 import './Header.css';
 
 const Header = () => {
@@ -23,7 +24,7 @@ const Header = () => {
       <div className="header-container">
         <div className="logo">
           <Link to="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
-            <img src="/logo.svg" alt="logo.svg" style={{ height: '70px', width: 'auto' }} />
+            <img src={logo} alt="Kezoi Logo" style={{ height: '70px', width: 'auto' }} />
           </Link>
         </div>
         <nav className="nav-links">
