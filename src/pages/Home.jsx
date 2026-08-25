@@ -21,11 +21,11 @@ const Home = () => {
       <About />
       <FeaturedStays />
       <Gallery />
+      <Reviews />
       <Experience />
       <BrandStatement />
       <Locations />
       <WhyKezoi />
-      <Reviews />
       <LongStay />
       <BookingCTA />
       <FinalBrand />
