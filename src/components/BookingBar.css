@@ -15,24 +15,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 10px 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 12px;
 }
 
 .booking-field {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   flex: 1;
-  min-width: 180px;
+  min-width: 140px;
 }
 
 .booking-icon {
   color: #cda869; /* Theme gold color */
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   stroke-width: 1.5;
 }
 
@@ -42,20 +42,20 @@
 }
 
 .booking-label {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: #666;
   font-weight: 500;
 }
 
 .booking-value {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #333;
   font-weight: 600;
 }
 
 .booking-divider {
   width: 1px;
-  height: 40px;
+  height: 30px;
   background-color: #eee;
   display: none;
 }
@@ -66,13 +66,20 @@
   }
 }
 
+.booking-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .booking-btn {
   background-color: #000;
   color: white;
   border: none;
-  padding: 15px 30px;
+  padding: 12px 20px;
   border-radius: 6px;
   font-weight: 600;
+  font-size: 0.9rem;
   cursor: pointer;
   transition: background-color 0.3s;
   white-space: nowrap;
@@ -82,43 +89,23 @@
   background-color: #333;
 }
 
-.booking-banner {
-  background: linear-gradient(135deg, #0f3d34 0%, #164f43 100%);
-  border: 1px solid rgba(205, 168, 105, 0.2);
-  border-left: 4px solid #cda869;
-  border-radius: 8px;
-  padding: 18px 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #f9f6f0;
-  flex-wrap: wrap;
-  gap: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-}
-
-.booking-banner p {
-  margin: 0;
-  font-size: 1.05rem;
-  font-weight: 400;
-  letter-spacing: 0.3px;
-}
-
-.callback-btn {
+.callback-btn-compact {
   background-color: transparent;
-  color: #cda869;
-  border: 1px solid #cda869;
-  padding: 10px 24px;
+  color: #0f3d34;
+  border: 1px solid #0f3d34;
+  padding: 11px 16px;
   border-radius: 6px;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 0.9rem;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
-.callback-btn:hover {
-  background-color: #cda869;
-  color: #0f3d34;
+.callback-btn-compact:hover {
+  background-color: #0f3d34;
+  color: white;
 }

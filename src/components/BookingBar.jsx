@@ -34,15 +34,13 @@ const BookingBar = () => {
           </div>
         </div>
         
-        <button className="booking-btn">Check Availability</button>
-      </div>
-
-      <div className="booking-banner">
-        <p>Finding your ideal vacation spot should be easy, we're here to help!</p>
-        <button className="callback-btn">
-          <PhoneCall size={18} />
-          Request Callback
-        </button>
+        <div className="booking-actions">
+          <button className="callback-btn-compact">
+            <PhoneCall size={16} />
+            Callback
+          </button>
+          <button className="booking-btn">Check Availability</button>
+        </div>
       </div>
     </div>
   );
