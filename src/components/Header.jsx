@@ -22,10 +22,11 @@ const Header = () => {
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo">
-          <h2>Kezoi <span>Stays</span></h2>
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <h2>Kezoi <span>Stays</span></h2>
+          </Link>
         </div>
         <nav className="nav-links">
-          <Link to="/">Home page</Link>
           <Link to="/about">About us</Link>
           <Link to="/properties">Properties</Link>
           <Link to="/gallery">Gallery</Link>
