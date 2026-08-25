@@ -25,11 +25,11 @@ const Header = () => {
           <h2>Kezoi <span>Stays</span></h2>
         </div>
         <nav className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/stays">Stays</Link>
-          <Link to="/experience">Experience</Link>
-          <Link to="/locations">Locations</Link>
-          <Link to="/about">About</Link>
+          <Link to="/">Home page</Link>
+          <Link to="/about">About us</Link>
+          <Link to="/properties">Properties</Link>
+          <Link to="/gallery">Gallery</Link>
+          <Link to="/collaboration">Collaboration</Link>
           <Link to="/contact">Contact</Link>
         </nav>
         <div className="header-cta">

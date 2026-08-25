@@ -12,16 +12,19 @@ import Contact from './pages/Contact';
 import Profile from './pages/Profile';
 import Legal from './pages/Legal';
 
+import Gallery from './pages/Gallery';
+import Collaboration from './pages/Collaboration';
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="stays" element={<Stays />} />
+          <Route path="properties" element={<Stays />} />
           <Route path="stay/:slug" element={<StayDetails />} />
-          <Route path="experience" element={<Experience />} />
-          <Route path="locations" element={<Locations />} />
+          <Route path="gallery" element={<Gallery />} />
+          <Route path="collaboration" element={<Collaboration />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="profile" element={<Profile />} />
