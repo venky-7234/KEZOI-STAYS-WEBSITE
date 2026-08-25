@@ -36,9 +36,8 @@ const Gallery = () => {
   return (
     <section className="gallery section-padding" ref={sectionRef}>
       <div className="gallery-header-center">
-        <span className="section-eyebrow">Gallery</span>
         <h2 className="section-title">Customer Gallery</h2>
-        <p className="section-desc">Moments captured by our guests during their stay</p>
+        <p className="section-desc">A Glimpse Into The Kezoi Experience</p>
       </div>
       
       <div className="gallery-carousel">
