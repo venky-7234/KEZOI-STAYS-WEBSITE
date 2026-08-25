@@ -76,7 +76,7 @@ const Hero = () => {
           </div>
         </h1>
         <p className="hero-sub">
-          The Art of Refined Living Starts at Kezoi.
+          Where Every Stay Becomes Extraordinary.
         </p>
         <div className="hero-buttons">
           <button className="btn-primary">Explore Stays</button>
