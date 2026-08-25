@@ -22,8 +22,8 @@ const Header = () => {
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo">
-          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-            <h2>Kezoi <span>Stays</span></h2>
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
+            <img src="/logo.png" alt="Kezoi Stays Logo" style={{ height: '50px', width: 'auto' }} />
           </Link>
         </div>
         <nav className="nav-links">
