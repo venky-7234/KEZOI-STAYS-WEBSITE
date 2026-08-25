@@ -12,22 +12,36 @@ const Gallery = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Fade in cards on scroll
-      cardsRef.current.forEach((card, index) => {
-        gsap.fromTo(card,
-          { y: 50, opacity: 0 },
-          {
-            y: 0,
-            opacity: 1,
-            duration: 0.8,
-            ease: 'power2.out',
-            scrollTrigger: {
-              trigger: card,
-              start: 'top 90%',
-            }
+      // Animate header
+      gsap.fromTo('.gallery-header-center',
+        { y: 50, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top 80%',
           }
-        );
-      });
+        }
+      );
+
+      // Stagger cards in from the right
+      gsap.fromTo(cardsRef.current,
+        { x: 50, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.15,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: '.gallery-carousel',
+            start: 'top 85%',
+          }
+        }
+      );
     }, sectionRef);
 
     return () => ctx.revert();
