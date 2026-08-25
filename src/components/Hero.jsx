@@ -63,6 +63,11 @@ const Hero = () => {
       <div className="hero-overlay"></div>
       
       <div className="hero-content">
+        <img 
+          src="/logo.svg" 
+          alt="Kezoi Stays" 
+          style={{ height: '80px', width: 'auto', marginBottom: '30px', marginInline: 'auto' }} 
+        />
         <h1 ref={textRef} className="hero-title">
           <div className="line-wrap">
             <span className="reveal-text">Your</span> <span className="reveal-text">Next</span> <span className="reveal-text">Memorable</span> <span className="reveal-text">Stay</span>

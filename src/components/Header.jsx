@@ -23,7 +23,7 @@ const Header = () => {
       <div className="header-container">
         <div className="logo">
           <Link to="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
-            <img src="/logo.png" alt="Kezoi Stays Logo" style={{ height: '50px', width: 'auto' }} />
+            <img src="/logo.svg" alt="Kezoi Stays Logo" style={{ height: '50px', width: 'auto' }} />
           </Link>
         </div>
         <nav className="nav-links">
