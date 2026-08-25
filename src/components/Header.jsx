@@ -24,7 +24,7 @@ const Header = () => {
       <div className="header-container">
         <div className="logo">
           <Link to="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center' }}>
-            <img src={logo} alt="Kezoi Logo" style={{ height: '160px', width: 'auto' }} />
+            <img src={logo} alt="Kezoi Logo" style={{ height: '120px', width: 'auto' }} />
           </Link>
         </div>
         <nav className="nav-links">
