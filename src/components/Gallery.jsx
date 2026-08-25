@@ -27,21 +27,45 @@ const Gallery = () => {
         }
       );
 
-      // Stagger cards in from the right
+      // Stagger cards in initially
       gsap.fromTo(cardsRef.current,
-        { x: 50, opacity: 0 },
+        { opacity: 0, y: 30 },
         {
-          x: 0,
           opacity: 1,
-          duration: 1,
-          stagger: 0.15,
+          y: 0,
+          duration: 0.8,
+          stagger: 0.1,
           ease: 'power3.out',
           scrollTrigger: {
-            trigger: '.gallery-carousel',
-            start: 'top 85%',
+            trigger: sectionRef.current,
+            start: 'top 70%',
           }
         }
       );
+
+      // Horizontal scroll animation
+      const carousel = document.querySelector('.gallery-carousel');
+      
+      // Use setTimeout to ensure DOM is fully rendered for accurate width calculation
+      setTimeout(() => {
+        const scrollWidth = carousel.scrollWidth;
+        const amountToScroll = scrollWidth - window.innerWidth + (window.innerWidth * 0.1);
+
+        if (amountToScroll > 0) {
+          gsap.to(carousel, {
+            x: -amountToScroll,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: sectionRef.current,
+              start: 'center center',
+              end: () => `+=${amountToScroll}`,
+              pin: true,
+              scrub: 1,
+              invalidateOnRefresh: true
+            }
+          });
+        }
+      }, 100);
     }, sectionRef);
 
     return () => ctx.revert();

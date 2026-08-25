@@ -44,23 +44,8 @@
 .gallery-carousel {
   display: flex;
   gap: 20px;
-  overflow-x: auto;
-  padding: 20px 5%;
-  margin: 0 -5%; /* Pull out of section padding */
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
-}
-
-@media (min-width: 1024px) {
-  .gallery-carousel {
-    padding: 20px 10%;
-    margin: 0 -10%;
-  }
-}
-
-.gallery-carousel::-webkit-scrollbar {
-  display: none;
+  width: max-content;
+  padding: 20px 5vw;
 }
 
 .customer-card-placeholder {
