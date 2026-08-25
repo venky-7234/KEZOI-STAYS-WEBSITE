@@ -58,7 +58,7 @@ const Hero = () => {
       <div 
         className="hero-bg" 
         ref={bgRef}
-        style={{ backgroundImage: `url('https://unsplash.com/photos/white-and-brown-concrete-building-under-blue-sky-during-daytime-_TPTXZd9mOo')` }}
+        style={{ backgroundImage: `url('https://source.unsplash.com/_TPTXZd9mOo/1920x1080')` }}
       ></div>
       <div className="hero-overlay"></div>
       
