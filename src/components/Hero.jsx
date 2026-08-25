@@ -64,11 +64,15 @@ const Hero = () => {
       
       <div className="hero-content">
         <h1 ref={textRef} className="hero-title">
-          <div className="line-wrap"><span className="reveal-text">Stay</span> <span className="reveal-text">Different.</span></div>
-          <div className="line-wrap"><span className="reveal-text">Stay</span> <span className="reveal-text">Kezoi.</span></div>
+          <div className="line-wrap">
+            <span className="reveal-text">Your</span> <span className="reveal-text">Next</span> <span className="reveal-text">Memorable</span> <span className="reveal-text">Stay</span>
+          </div>
+          <div className="line-wrap">
+            <span className="reveal-text">Begins</span> <span className="reveal-text">at</span> <span className="reveal-text">Kezoi.</span>
+          </div>
         </h1>
         <p className="hero-sub">
-          Premium stays crafted for comfort, privacy and effortless living.
+          Beautifully curated spaces, personalised comfort and hospitality that makes every moment feel exceptional.
         </p>
         <div className="hero-buttons">
           <button className="btn-primary">Explore Stays</button>
