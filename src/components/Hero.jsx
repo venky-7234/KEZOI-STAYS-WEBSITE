@@ -67,7 +67,7 @@ const Hero = () => {
         <img 
           src={logo}
           alt="Kezoi Logo"
-          style={{ height: '80px', width: 'auto', marginBottom: '30px', marginInline: 'auto' }} 
+          style={{ height: '140px', width: 'auto', marginBottom: '30px', marginInline: 'auto' }} 
         />
         <h1 ref={textRef} className="hero-title">
           <div className="line-wrap">
