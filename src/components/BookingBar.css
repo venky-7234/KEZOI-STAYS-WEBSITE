@@ -83,37 +83,42 @@
 }
 
 .booking-banner {
-  background-color: #d13030; /* Adjusted red theme to match Kezoi feel, or use dark green if they prefer. Used red as per screenshot. */
+  background: linear-gradient(135deg, #0f3d34 0%, #164f43 100%);
+  border: 1px solid rgba(205, 168, 105, 0.2);
+  border-left: 4px solid #cda869;
   border-radius: 8px;
-  padding: 15px 25px;
+  padding: 18px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: #f9f6f0;
   flex-wrap: wrap;
   gap: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .booking-banner p {
   margin: 0;
   font-size: 1.05rem;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 0.3px;
 }
 
 .callback-btn {
-  background-color: #000;
-  color: white;
-  border: none;
-  padding: 10px 20px;
+  background-color: transparent;
+  color: #cda869;
+  border: 1px solid #cda869;
+  padding: 10px 24px;
   border-radius: 6px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 8px;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
 }
 
 .callback-btn:hover {
-  background-color: #333;
+  background-color: #cda869;
+  color: #0f3d34;
 }
