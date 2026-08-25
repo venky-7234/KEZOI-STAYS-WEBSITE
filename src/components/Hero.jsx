@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ChevronDown } from 'lucide-react';
-import logo from '../assets/logo.svg';
 import './Hero.css';
 
 const Hero = () => {
@@ -62,13 +61,7 @@ const Hero = () => {
         style={{ backgroundImage: `url('/hero-bg.jpg')` }}
       ></div>
       <div className="hero-overlay"></div>
-      
       <div className="hero-content">
-        <img 
-          src={logo}
-          alt="Kezoi Logo"
-          style={{ height: '240px', width: 'auto', marginBottom: '30px', marginInline: 'auto' }} 
-        />
         <h1 ref={textRef} className="hero-title">
           <div className="line-wrap">
             <span className="reveal-text">Your</span> <span className="reveal-text">Next</span> <span className="reveal-text">Memorable</span> <span className="reveal-text">Stay</span>
