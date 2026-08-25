@@ -58,7 +58,7 @@ const Hero = () => {
       <div 
         className="hero-bg" 
         ref={bgRef}
-        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop')` }}
+        style={{ backgroundImage: `url('https://unsplash.com/photos/white-and-brown-concrete-building-under-blue-sky-during-daytime-_TPTXZd9mOo')` }}
       ></div>
       <div className="hero-overlay"></div>
       
@@ -76,7 +76,7 @@ const Hero = () => {
           </div>
         </h1>
         <p className="hero-sub">
-          Beautifully curated spaces, personalised comfort and hospitality that makes every moment feel exceptional.
+          The Art of Refined Living Starts at Kezoi.
         </p>
         <div className="hero-buttons">
           <button className="btn-primary">Explore Stays</button>
