@@ -9,23 +9,13 @@ gsap.registerPlugin(ScrollTrigger);
 const reviews = [
   {
     id: 1,
-    text: "We booked Kezoi for a small celebration, and it turned out to be the perfect choice. We had the space to ourselves, everything felt comfortable, and we could actually enjoy the time together without rushing anywhere."
+    text: "“We reserved a Kezoi estate for an intimate milestone celebration. The privacy, immaculate detailing, and seamless service meant we could simply focus on enjoying time together. It surpassed every five-star hotel experience we’ve had.”",
+    author: "VICTORIA S., EXECUTIVE VICE PRESIDENT (LONDON)"
   },
   {
     id: 2,
-    text: "The place was so comfortable, it honestly felt like we had our own little space in the city. Everything was easy, and we didn't have to worry about a thing."
-  },
-  {
-    id: 3,
-    text: "What I liked most was how effortless the whole stay felt. The space was beautiful, comfortable, and exactly what we needed after a long day."
-  },
-  {
-    id: 4,
-    text: "It didn't feel like we were just staying somewhere. It felt like we had a place of our own for a few days. That made the whole trip better."
-  },
-  {
-    id: 5,
-    text: "We weren't really looking for anything fancy. We just wanted a good place to hang out, talk for hours, eat, laugh, and do nothing for a while. It felt like our own little space for the weekend."
+    text: "“Effortless from start to finish. Having a dedicated human contact meant every request was handled instantly. Kezoi has become our non-negotiable choice for city stays.”",
+    author: "MARCUS CHEN, TECH FOUNDER (SINGAPORE)"
   }
 ];
 
@@ -72,8 +62,9 @@ const Reviews = () => {
 
   return (
     <section className="reviews section-padding" ref={sectionRef}>
-      <div className="reviews-header">
-        <h2 className="section-title">Testimonials</h2>
+      <div className="reviews-header" style={{maxWidth: '800px', margin: '0 auto 60px'}}>
+        <span className="section-eyebrow" style={{color: 'var(--color-gold)', letterSpacing: '2px', textTransform: 'uppercase', display: 'block', marginBottom: '10px'}}>GUEST TESTIMONIALS</span>
+        <h2 className="section-title">Stories From Our Guests</h2>
       </div>
       
       <div className="reviews-grid">
@@ -84,7 +75,8 @@ const Reviews = () => {
             ref={el => cardsRef.current[index] = el}
           >
             <Quote className="quote-icon" size={32} />
-            <p className="review-card-text">{review.text}</p>
+            <p className="review-card-text" style={{fontStyle: 'italic'}}>{review.text}</p>
+            <span className="review-author" style={{marginTop: 'auto', fontSize: '0.85rem', fontWeight: 'bold', color: 'var(--color-gold)', letterSpacing: '1px'}}>{review.author}</span>
           </div>
         ))}
       </div>

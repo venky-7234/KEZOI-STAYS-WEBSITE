@@ -11,9 +11,13 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Profile from './pages/Profile';
 import Legal from './pages/Legal';
+import Care from './pages/Care';
+import Move from './pages/Move';
+import Table from './pages/Table';
 
 import Gallery from './pages/Gallery';
 import Collaboration from './pages/Collaboration';
+import Journal from './pages/Journal';
 
 function App() {
   return (
@@ -25,7 +29,12 @@ function App() {
           <Route path="stay/:slug" element={<StayDetails />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="collaboration" element={<Collaboration />} />
+          <Route path="journal" element={<Journal />} />
           <Route path="about" element={<About />} />
+          <Route path="experiences" element={<Experience />} />
+          <Route path="experiences/care" element={<Care />} />
+          <Route path="experiences/move" element={<Move />} />
+          <Route path="experiences/table" element={<Table />} />
           <Route path="contact" element={<Contact />} />
           <Route path="profile" element={<Profile />} />
           <Route path="privacy" element={<Legal title="Privacy Policy" />} />

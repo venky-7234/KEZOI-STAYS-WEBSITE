@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowRight } from 'lucide-react';
@@ -43,7 +43,7 @@ const Locations = () => {
   const containerRef = useRef(null);
   const scrollRef = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     // Determine if it's desktop view for horizontal scroll
     const isDesktop = window.innerWidth >= 1024;
     

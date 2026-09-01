@@ -30,31 +30,14 @@ const BookingCTA = () => {
   }, []);
 
   return (
-    <section className="booking-cta section-padding" ref={sectionRef}>
-      <div className="booking-cta-header">
-        <h2 className="section-title">Your Next Stay Starts Here.</h2>
-      </div>
-      
-      <div className="booking-bar">
-        <div className="booking-field">
-          <label>Location</label>
-          <input type="text" placeholder="Where do you want to stay?" />
-        </div>
-        <div className="booking-field divider">
-          <label>Check-In</label>
-          <input type="text" placeholder="Add dates" />
-        </div>
-        <div className="booking-field divider">
-          <label>Check-Out</label>
-          <input type="text" placeholder="Add dates" />
-        </div>
-        <div className="booking-field divider">
-          <label>Guests</label>
-          <input type="text" placeholder="Add guests" />
-        </div>
-        <button className="search-btn">
-          <Search size={20} />
-          <span>Search</span>
+    <section className="booking-cta section-padding" ref={sectionRef} style={{textAlign: 'center', backgroundColor: 'var(--color-dark)', color: 'var(--color-ivory)'}}>
+      <div className="booking-cta-header" style={{maxWidth: '800px', margin: '0 auto'}}>
+        <h2 className="section-title" style={{color: 'var(--color-ivory)', marginBottom: '20px', fontSize: '2.5rem'}}>Your next extraordinary escape awaits.</h2>
+        <p style={{fontSize: '1.2rem', color: 'rgba(255,255,255,0.7)', marginBottom: '40px', lineHeight: '1.6'}}>
+          Book direct for exclusive privileges and signature conciergeries.
+        </p>
+        <button className="btn-primary" style={{backgroundColor: 'var(--color-gold)', color: 'var(--color-dark)', padding: '15px 40px', fontSize: '1.1rem', borderRadius: '50px', border: 'none', cursor: 'pointer', fontWeight: 'bold'}}>
+          RESERVE YOUR STAY
         </button>
       </div>
     </section>

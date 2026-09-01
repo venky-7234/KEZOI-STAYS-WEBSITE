@@ -1,0 +1,119 @@
+.pillars-section {
+  padding: 100px 5%;
+  background-color: var(--color-ivory);
+  color: var(--color-dark);
+}
+
+.pillars-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pillars-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.pillars-main-title {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 25px;
+}
+
+.pillars-micro-copy h3 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.pillars-micro-copy p {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--color-grey);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.pillar-card {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0,0,0,0.08);
+}
+
+.pillar-number {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  color: var(--color-gold);
+  opacity: 0.6;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.pillar-title {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.pillar-description {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.pillar-cta.btn-outline {
+  align-self: flex-start;
+  color: var(--color-dark);
+  border-color: var(--color-dark);
+  font-size: 0.85rem;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pillar-cta.btn-outline:hover {
+  background-color: var(--color-dark);
+  color: var(--color-ivory);
+}
+
+@media (max-width: 768px) {
+  .pillars-section {
+    padding: 60px 5%;
+  }
+  
+  .pillars-micro-copy h3 {
+    font-size: 2rem;
+  }
+  
+  .pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

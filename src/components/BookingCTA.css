@@ -69,6 +69,11 @@
   font-size: 0.95rem;
   color: var(--color-grey);
   background: transparent;
+  width: 100%;
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .booking-field input::placeholder {

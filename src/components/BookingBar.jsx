@@ -10,9 +10,9 @@ const BookingBar = () => {
         <div className="booking-field">
           <Building className="booking-icon" />
           <div className="booking-info">
-            <span className="booking-label">Property</span>
+            <span className="booking-label">Destination / City</span>
             <span className="booking-value" style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-              Select your Preferred Stay <ChevronDown size={16} />
+              Select Location <ChevronDown size={16} />
             </span>
           </div>
         </div>
@@ -22,18 +22,8 @@ const BookingBar = () => {
         <div className="booking-field">
           <Calendar className="booking-icon" />
           <div className="booking-info">
-            <span className="booking-label">Check In</span>
-            <span className="booking-value">Select Date</span>
-          </div>
-        </div>
-        
-        <div className="booking-divider"></div>
-        
-        <div className="booking-field">
-          <Calendar className="booking-icon" />
-          <div className="booking-info">
-            <span className="booking-label">Check Out</span>
-            <span className="booking-value">Select Date</span>
+            <span className="booking-label">Dates</span>
+            <span className="booking-value">Check-in / Check-out</span>
           </div>
         </div>
         
@@ -42,17 +32,25 @@ const BookingBar = () => {
         <div className="booking-field">
           <Users className="booking-icon" />
           <div className="booking-info">
-            <span className="booking-label">Guests</span>
-            <span className="booking-value">1 Adult, 0 Child</span>
+            <span className="booking-label">Guests / Suite Count</span>
+            <span className="booking-value">Add Guests</span>
+          </div>
+        </div>
+        
+        <div className="booking-divider"></div>
+        
+        <div className="booking-field">
+          <PhoneCall className="booking-icon" />
+          <div className="booking-info">
+            <span className="booking-label">Experience Type</span>
+            <span className="booking-value" style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+              Leisure <ChevronDown size={16} />
+            </span>
           </div>
         </div>
         
         <div className="booking-actions">
-          <button className="callback-btn-compact">
-            <PhoneCall size={16} />
-            Callback
-          </button>
-          <button className="booking-btn">Check Availability</button>
+          <button className="booking-btn">Search Availability</button>
         </div>
       </div>
     </div>

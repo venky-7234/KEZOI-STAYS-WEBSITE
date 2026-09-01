@@ -52,7 +52,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <section className="experience section-padding" id="experience" ref={sectionRef}>
+    <section className="experience section-padding" id="experience" ref={sectionRef} style={{ paddingTop: '20px' }}>
       <div className="experience-header">
         <h2 className="section-title">Everything You Need.<br/>Nothing You Don't.</h2>
       </div>

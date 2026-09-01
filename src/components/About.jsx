@@ -51,9 +51,10 @@ const About = () => {
     <section className="about section-padding" id="about" ref={sectionRef}>
       <div className="about-container">
         <div className="about-text" ref={textRef}>
-          <h2 className="about-heading">Why Settle for Ordinary When You Can Stay Better?</h2>
-          <p className="about-desc">
-            Kezoi Stays brings you thoughtfully selected spaces designed for comfort, relaxation and unforgettable moments. From city escapes to peaceful retreats, every stay is created to feel special.
+          <h3 className="section-subtitle">WHY SETTLE FOR ORDINARY?</h3>
+          <h2 className="about-heading" style={{fontSize: '2.5rem', marginBottom: '30px'}}>Redefining Luxury Hospitality for the Modern Connoisseur</h2>
+          <p className="about-desc" style={{fontSize: '1.1rem', lineHeight: '1.8', color: 'var(--color-grey)'}}>
+            Standard luxury hotels give you four generic walls and a static amenities checklist. At Kezoi Stays, we believe true luxury lies in spatial freedom, privacy, and hospitality that intuitively adapts to you. Every Kezoi property is an individually curated sanctuary—combining the architectural character of an elite private home with the uncompromising operational standards of a five-star hotel. From secluded coastal retreats to vibrant urban penthouses, we create spaces where life’s finest moments unfold naturally.
           </p>
         </div>
         <div className="about-image-wrapper">

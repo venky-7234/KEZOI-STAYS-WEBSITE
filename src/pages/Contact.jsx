@@ -1,45 +1,49 @@
 import React from 'react';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
+import BookingCTA from '../components/BookingCTA';
 
 const Contact = () => {
   return (
-    <div className="section-padding" style={{ paddingTop: '150px' }}>
-      <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-        <h1 style={{ fontSize: '3rem', color: 'var(--color-ivory)', marginBottom: '20px', textAlign: 'center' }}>Contact Us</h1>
-        <p style={{ color: 'var(--color-grey)', fontSize: '1.2rem', textAlign: 'center', marginBottom: '60px' }}>
-          Have a question or looking to book a long stay? Get in touch with our team.
-        </p>
-
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '60px', '@media (minWidth: 768px)': { gridTemplateColumns: '1fr 1fr' } }}>
-          {/* Contact Details */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
-            <h2 style={{ fontSize: '2rem', color: 'var(--color-gold)', marginBottom: '10px' }}>Get in Touch</h2>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-              <Phone style={{ color: 'var(--color-gold)' }} />
-              <p style={{ fontSize: '1.1rem', color: 'var(--color-ivory)' }}>+91 98765 43210</p>
+    <div style={{ paddingTop: '120px' }}>
+      <div className="section-padding" style={{ textAlign: 'center', paddingBottom: '60px', maxWidth: '1000px', margin: '0 auto' }}>
+        <span className="section-eyebrow" style={{color: 'var(--color-gold)', letterSpacing: '2px', textTransform: 'uppercase', display: 'block', marginBottom: '15px'}}>CONNECT & CONCIERGE</span>
+        <h1 style={{ fontSize: '3.5rem', color: 'var(--color-ivory)', marginBottom: '20px', lineHeight: '1.2' }}>At Your Service.</h1>
+      </div>
+      
+      <div className="section-padding" style={{ maxWidth: '1000px', margin: '0 auto', paddingBottom: '100px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px' }}>
+          
+          <div style={{ backgroundColor: 'var(--color-white)', padding: '40px', borderRadius: '12px', color: 'var(--color-dark)', textAlign: 'center' }}>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '20px', color: 'var(--color-dark)' }}>General Reservations</h3>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '15px', color: 'var(--color-grey)' }}>
+              <Mail size={18} />
+              <span>reserve@kezoistays.com</span>
             </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-              <Mail style={{ color: 'var(--color-gold)' }} />
-              <p style={{ fontSize: '1.1rem', color: 'var(--color-ivory)' }}>hello@kezoistays.com</p>
-            </div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-              <MapPin style={{ color: 'var(--color-gold)' }} />
-              <p style={{ fontSize: '1.1rem', color: 'var(--color-ivory)' }}>Hyderabad, Telangana</p>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', color: 'var(--color-grey)' }}>
+              <Phone size={18} />
+              <span>+91 98765 43210</span>
             </div>
           </div>
 
-          {/* Form Placeholder */}
-          <div style={{ backgroundColor: 'rgba(255,255,255,0.02)', padding: '40px', borderRadius: '8px' }}>
-            <h3 style={{ fontSize: '1.5rem', color: 'var(--color-ivory)', marginBottom: '20px' }}>Send an Enquiry</h3>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-              <input type="text" placeholder="Your Name" style={{ padding: '15px', backgroundColor: 'transparent', border: '1px solid rgba(255,255,255,0.1)', color: 'white', borderRadius: '4px' }} />
-              <input type="email" placeholder="Your Email" style={{ padding: '15px', backgroundColor: 'transparent', border: '1px solid rgba(255,255,255,0.1)', color: 'white', borderRadius: '4px' }} />
-              <textarea placeholder="Your Message" rows="4" style={{ padding: '15px', backgroundColor: 'transparent', border: '1px solid rgba(255,255,255,0.1)', color: 'white', borderRadius: '4px' }}></textarea>
-              <button className="btn-primary" style={{ marginTop: '10px' }}>Send Message</button>
+          <div style={{ backgroundColor: 'var(--color-white)', padding: '40px', borderRadius: '12px', color: 'var(--color-dark)', textAlign: 'center' }}>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '20px', color: 'var(--color-dark)' }}>Property Partnerships</h3>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '15px', color: 'var(--color-grey)' }}>
+              <Mail size={18} />
+              <span>partners@kezoistays.com</span>
             </div>
           </div>
+
+          <div style={{ backgroundColor: 'var(--color-white)', padding: '40px', borderRadius: '12px', color: 'var(--color-dark)', textAlign: 'center' }}>
+            <h3 style={{ fontSize: '1.5rem', marginBottom: '20px', color: 'var(--color-dark)' }}>Press & Media</h3>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', marginBottom: '15px', color: 'var(--color-grey)' }}>
+              <Mail size={18} />
+              <span>press@kezoistays.com</span>
+            </div>
+          </div>
+
         </div>
       </div>
+      <BookingCTA />
     </div>
   );
 };

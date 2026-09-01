@@ -1,34 +1,22 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import BookingBar from '../components/BookingBar';
-import About from '../components/About';
-import FeaturedStays from '../components/FeaturedStays';
 import Experience from '../components/Experience';
+import KezoiStory from '../components/KezoiStory';
 import BrandStatement from '../components/BrandStatement';
-import Locations from '../components/Locations';
 import Gallery from '../components/Gallery';
-import WhyKezoi from '../components/WhyKezoi';
-import Reviews from '../components/Reviews';
-import LongStay from '../components/LongStay';
-import BookingCTA from '../components/BookingCTA';
-import FinalBrand from '../components/FinalBrand';
+import CustomerStories from '../components/CustomerStories';
+
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <BookingBar />
-      <About />
-      <FeaturedStays />
+      <KezoiStory />
       <Gallery />
-      <Reviews />
+
       <Experience />
+      <CustomerStories />
       <BrandStatement />
-      <Locations />
-      <WhyKezoi />
-      <LongStay />
-      <BookingCTA />
-      <FinalBrand />
     </>
   );
 };

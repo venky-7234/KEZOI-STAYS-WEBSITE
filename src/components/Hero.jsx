@@ -1,85 +1,86 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import gsap from 'gsap';
-import { ChevronDown } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
   const heroRef = useRef(null);
-  const textRef = useRef(null);
-  const bgRef = useRef(null);
+  const [activePanel, setActivePanel] = useState(null);
+  const navigate = useNavigate();
+
+  const handlePanelClick = (id, link, e) => {
+    e.preventDefault();
+    // If clicking a non-active panel, expand it.
+    // If it is already active, navigate to the page.
+    if (activePanel !== id) {
+      setActivePanel(id);
+    } else {
+      navigate(link);
+      window.scrollTo(0, 0);
+    }
+  };
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Background slow zoom
-      gsap.to(bgRef.current, {
-        scale: 1.1,
-        duration: 20,
-        ease: 'none',
-        repeat: -1,
-        yoyo: true
-      });
-
-      // Text reveal
-      const chars = textRef.current.querySelectorAll('.reveal-text');
-      
-      gsap.fromTo(chars, 
-        { y: 100, opacity: 0 },
-        { 
-          y: 0, 
-          opacity: 1, 
-          duration: 1.2, 
-          stagger: 0.1, 
-          ease: 'power4.out',
-          delay: 0.5
+      // Entrance animation for the panels
+      gsap.fromTo('.hero-frame',
+        { y: 50, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          stagger: 0.2,
+          ease: 'power3.out',
+          delay: 0.2
         }
-      );
-
-      gsap.fromTo('.hero-sub',
-        { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, delay: 1.2, ease: 'power3.out' }
-      );
-
-      gsap.fromTo('.hero-buttons',
-        { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, delay: 1.4, ease: 'power3.out' }
-      );
-      
-      gsap.fromTo('.scroll-indicator',
-        { opacity: 0 },
-        { opacity: 1, duration: 1, delay: 2, ease: 'power2.inOut' }
       );
     }, heroRef);
 
     return () => ctx.revert();
   }, []);
 
-  return (
-    <section className="hero" ref={heroRef} id="home">
-      <div 
-        className="hero-bg" 
-        ref={bgRef}
-        style={{ backgroundImage: `url('/hero-bg.jpg')` }}
-      ></div>
-      <div className="hero-overlay"></div>
-      <div className="hero-content">
-        <h1 ref={textRef} className="hero-title">
-          <div className="line-wrap">
-            <span className="reveal-text">Your</span> <span className="reveal-text">Next</span> <span className="reveal-text">Memorable</span> <span className="reveal-text">Stay</span>
-          </div>
-          <div className="line-wrap">
-            <span className="reveal-text">Begins</span> <span className="reveal-text">at</span> <span className="reveal-text">Kezoi.</span>
-          </div>
-        </h1>
-        <p className="hero-sub">
-          Where Every Stay Becomes Extraordinary.
-        </p>
-        <div className="hero-buttons">
-          <button className="btn-primary">Explore Stays</button>
-          <button className="btn-outline">Book Now</button>
-        </div>
-      </div>
+  const panels = [
+    {
+      id: 'care',
+      title: 'Kezoi Care',
+      image: '/kezoi_care_bg.jpg',
+      link: '/experiences/care'
+    },
+    {
+      id: 'move',
+      title: 'Kezoi Move',
+      image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      link: '/experiences/move'
+    },
+    {
+      id: 'table',
+      title: 'Kezoi Table',
+      image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      link: '/experiences/table'
+    }
+  ];
 
-      
+  return (
+    <section className="hero-split" ref={heroRef} id="home">
+      {panels.map((panel) => (
+        <a 
+          href={panel.link} 
+          className={`hero-frame frame-${panel.id} ${activePanel === panel.id ? 'active' : ''} ${activePanel && activePanel !== panel.id ? 'inactive' : ''}`} 
+          key={panel.id}
+          onClick={(e) => handlePanelClick(panel.id, panel.link, e)}
+        >
+          <div 
+            className="frame-bg"
+            style={{ backgroundImage: `url('${panel.image}')` }}
+          ></div>
+          <div className="frame-overlay"></div>
+          
+          <div className="frame-content">
+            <h2 className="frame-title">{panel.title}</h2>
+            <span className="frame-subtitle">CLICK TO EXPLORE MORE</span>
+          </div>
+        </a>
+      ))}
     </section>
   );
 };

@@ -7,20 +7,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 const points = [
   {
-    title: 'Curated Homes',
-    desc: 'Only carefully selected premium properties.'
+    title: 'White-Glove Support',
+    desc: 'Real-time human concierge available from enquiry to post-checkout. Zero automated friction.'
   },
   {
-    title: 'Prime Locations',
-    desc: 'Stay close to Hyderabad’s major business and lifestyle hubs.'
+    title: 'Rigorous Standards',
+    desc: '150-point quality audit covering pristine hygiene, premium linens, fast Wi-Fi, and security.'
   },
   {
-    title: 'Consistent Quality',
-    desc: 'Every Kezoi stay follows the same high quality standards.'
-  },
-  {
-    title: 'Designed for Living',
-    desc: 'More space, more privacy and more comfort.'
+    title: 'Fluid Hospitality',
+    desc: 'Stays that adapt to your schedule with flexible check-ins, custom dining, and private transport.'
   }
 ];
 
@@ -51,8 +47,12 @@ const WhyKezoi = () => {
 
   return (
     <section className="why-kezoi section-padding" ref={sectionRef}>
-      <div className="section-header">
-        <h2 className="section-title">Why Kezoi</h2>
+      <div className="section-header" style={{maxWidth: '800px'}}>
+        <span className="section-eyebrow" style={{color: 'var(--color-gold)', letterSpacing: '2px', textTransform: 'uppercase', display: 'block', marginBottom: '10px'}}>BRAND PILLARS</span>
+        <h2 className="section-title" style={{marginBottom: '20px'}}>THE KEZOI WAY OF STAYING</h2>
+        <p className="section-desc" style={{fontSize: '1.1rem', lineHeight: '1.6', color: 'var(--color-grey)'}}>
+          Hospitality is not just about beautiful spaces; it is about absolute peace of mind. Every Kezoi stay is backed by a dedicated 24/7 personal concierge, ensuring every detail—from pre-arrival fridge stocking to tailored dining experiences—is executed flawlessly.
+        </p>
       </div>
       
       <div className="points-grid">
