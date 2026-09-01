@@ -10,7 +10,7 @@ const KezoiStory = () => {
       </div>
       
       <div className="story-grid">
-        {['The Homeowner', 'The Cook', 'The Care Partner', 'The Driver', 'The Guest'].map((person, index) => (
+        {['The Cook', 'The Care Partner', 'The Driver'].map((person, index) => (
           <div className="story-card" key={index}>
             <h3 className="story-card-title">{person}</h3>
           </div>

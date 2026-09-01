@@ -3,7 +3,6 @@ import Hero from '../components/Hero';
 import Experience from '../components/Experience';
 import KezoiStory from '../components/KezoiStory';
 import BrandStatement from '../components/BrandStatement';
-import Gallery from '../components/Gallery';
 import CustomerStories from '../components/CustomerStories';
 
 
@@ -12,7 +11,6 @@ const Home = () => {
     <>
       <Hero />
       <KezoiStory />
-      <Gallery />
 
       <Experience />
       <CustomerStories />

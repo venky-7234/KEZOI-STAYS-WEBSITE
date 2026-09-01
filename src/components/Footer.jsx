@@ -1,40 +1,59 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, Hash } from 'lucide-react';
+import logoUrl from '../assets/kezoi_logo-01.svg';
 import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer section-padding">
-      <div className="footer-container">
+    <footer className="footer">
+      <div className="footer-grid-background"></div>
+      <div className="footer-container section-padding">
+        
         <div className="footer-top">
           <div className="footer-brand">
-            <img src="/logo.svg" alt="Kezoi Stays Logo" className="footer-logo-img" style={{ height: '40px', width: 'auto', marginBottom: '15px' }} />
-            <p className="footer-desc">
-              Premium short-stay and serviced apartments in Hyderabad, designed for guests who value comfort, privacy and refined living.
-            </p>
+            <img 
+              src={logoUrl} 
+              alt="Kezoi Stays Logo" 
+              className="footer-logo-img" 
+            />
+            <h2 className="footer-tagline">KEZOI — A HOME.<br/>WITH A LIFE AROUND IT.</h2>
           </div>
 
-          <div className="footer-links">
+          <div className="footer-links-grid">
             <div className="footer-col">
-              <h4>Contact</h4>
-              <a href="tel:+919876543210"><Phone size={16} /> +91 98765 43210</a>
-              <a href="mailto:hello@kezoistays.com"><Mail size={16} /> hello@kezoistays.com</a>
-              <a href="#" className="social-link"><Hash size={16} /> @kezoistays</a>
+              <h4>Links</h4>
+              <Link to="/homes">Homes</Link>
+              <Link to="/experiences">Experiences</Link>
+              <Link to="/table">Table</Link>
+              <Link to="/care">Care</Link>
+              <Link to="/move">Move</Link>
+              <Link to="/journal">Journal</Link>
+              <Link to="/about">About</Link>
+              <Link to="/partner">Partner With Us</Link>
+              <Link to="/careers">Careers</Link>
+              <Link to="/contact">Contact</Link>
+            </div>
+
+            <div className="footer-col">
+              <h4>Social</h4>
+              <a href="https://www.instagram.com/kezoistays?igsi=MTE1Z2pmNWU4OW45dA==" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
             </div>
 
             <div className="footer-col">
               <h4>Legal</h4>
-              <Link to="/terms">Terms & Conditions</Link>
-              <Link to="/privacy">Privacy Policy</Link>
+              <Link to="/privacy">Privacy</Link>
+              <Link to="/terms">Terms</Link>
               <Link to="/cancellation">Cancellation Policy</Link>
+              <Link to="/partner-terms">Partner Terms</Link>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Kezoi Stays. All rights reserved.</p>
-          <p>Designed for Living.</p>
+          <p>&copy; KEZOI STAYS.</p>
         </div>
       </div>
     </footer>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import logoUrl from '../assets/kezoi_logo-01.svg';
 import './Header.css';
 
 const Header = () => {
@@ -27,9 +28,8 @@ const Header = () => {
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo">
-          <Link to="/" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }}>
-            <h2>KEZOI</h2>
-            <span>STAYS</span>
+          <Link to="/" style={{ textDecoration: 'none', display: 'block' }}>
+            <img src={logoUrl} alt="Kezoi Stays" className="header-logo-img" />
           </Link>
         </div>
         <nav className="nav-links">
@@ -44,12 +44,9 @@ const Header = () => {
           </div>
           <Link to="/journal">Journal</Link>
           <Link to="/partner">Partner with us</Link>
-          <Link to="/careers">Careers</Link>
-        </nav>
-        <div className="header-cta">
-          <Link to="/stays" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none' }}>Book a Stay</Link>
-        </div>
 
+        </nav>
+        {/* Book a Stay CTA removed from here */}
         {/* Mobile Menu Toggle Button */}
         <button className="mobile-menu-btn" onClick={toggleMobileMenu}>
           {mobileMenuOpen ? '✕' : '☰'}
@@ -67,8 +64,8 @@ const Header = () => {
         </div>
         <Link to="/journal" onClick={toggleMobileMenu}>Journal</Link>
         <Link to="/partner" onClick={toggleMobileMenu}>Partner with us</Link>
-        <Link to="/careers" onClick={toggleMobileMenu}>Careers</Link>
-        <Link to="/stays" className="btn-primary mobile-cta" onClick={toggleMobileMenu} style={{ textDecoration: 'none', textAlign: 'center', marginTop: '20px' }}>Book a Stay</Link>
+
+        {/* Book a Stay CTA removed from mobile menu */}
       </div>
     </header>
   );

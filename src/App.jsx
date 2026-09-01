@@ -18,6 +18,7 @@ import Table from './pages/Table';
 import Gallery from './pages/Gallery';
 import Collaboration from './pages/Collaboration';
 import Journal from './pages/Journal';
+import Partner from './pages/Partner';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="collaboration" element={<Collaboration />} />
           <Route path="journal" element={<Journal />} />
           <Route path="about" element={<About />} />
+          <Route path="partner" element={<Partner />} />
           <Route path="experiences" element={<Experience />} />
           <Route path="experiences/care" element={<Care />} />
           <Route path="experiences/move" element={<Move />} />

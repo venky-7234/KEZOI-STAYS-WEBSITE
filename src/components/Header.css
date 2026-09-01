@@ -29,20 +29,18 @@
   box-sizing: border-box;
 }
 
-.logo h2 {
-  font-size: 1.8rem;
-  margin: 0;
-  font-weight: 400;
-  letter-spacing: 1px;
+.header-logo-img {
+  width: 140px;
+  height: auto;
+  transition: all 0.3s ease;
+  object-fit: contain;
 }
 
-.logo span {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--color-gold);
+@media (min-width: 900px) {
+  .header-logo-img {
+    width: 200px;
+    height: auto;
+  }
 }
 
 .nav-links {
@@ -50,10 +48,16 @@
 }
 
 @media (min-width: 900px) {
+  .header-container {
+    position: relative;
+  }
   .nav-links {
     display: flex;
-    gap: 15px; /* Reduced gap to prevent overflow */
+    gap: 25px; 
     align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
