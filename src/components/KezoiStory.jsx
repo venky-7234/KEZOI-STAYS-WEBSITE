@@ -10,7 +10,7 @@ const KezoiStory = () => {
       </div>
       
       <div className="story-grid">
-        {['The Cook', 'The Care Partner', 'The Driver'].map((person, index) => (
+        {['The Table Partner', 'The Care Partner', 'The Move Partner'].map((person, index) => (
           <div className="story-card" key={index}>
             <h3 className="story-card-title">{person}</h3>
           </div>
@@ -20,7 +20,7 @@ const KezoiStory = () => {
       <div className="story-closing">
         <h2 className="story-closing-text">
           KEZOI IS BUILT BY PEOPLE.<br/>
-          Homes. Cooks. Drivers. Care teams. Creators. Guests.<br/>
+          <span className="story-sub-text">Homes. Cooks. Drivers. Care teams. Creators. Guests.</span><br/>
           <span className="story-highlight">A local ecosystem connected around one place: YOUR HOME.</span>
         </h2>
       </div>

@@ -76,6 +76,13 @@
   color: var(--color-ivory);
 }
 
+.story-sub-text {
+  font-size: 1.4rem;
+  font-weight: 300;
+  display: inline-block;
+  margin: 10px 0;
+}
+
 .story-highlight {
   color: var(--color-gold);
   display: block;

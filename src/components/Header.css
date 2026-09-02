@@ -218,3 +218,48 @@
 .mobile-nav-group a {
   font-size: 1.2rem;
 }
+
+.mobile-nav-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/Kezoi_Patterns-02.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.mobile-nav-social {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.mobile-nav-social a {
+  color: var(--color-gold);
+  opacity: 1;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+}
+
+.mobile-nav-social a:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+.mobile-nav-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

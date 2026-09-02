@@ -39,7 +39,7 @@
 
 /* Services Section */
 .move-services {
-  padding: 0px 20px 80px;
+  padding: 0px 20px 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -78,7 +78,7 @@
 
 /* Positioning & CTA Section */
 .move-closing {
-  padding: 120px 20px;
+  padding: 60px 20px;
   text-align: center;
   background-color: rgba(246, 245, 240, 0.02);
 }

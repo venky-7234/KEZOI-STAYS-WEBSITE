@@ -37,7 +37,7 @@
 
 /* Featured Home Section */
 .featured-home {
-  padding: 0 20px 100px;
+  padding: 0 20px 40px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -49,7 +49,7 @@
   min-height: 500px;
   border-radius: 12px;
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .featured-home-image {
@@ -112,7 +112,7 @@
 
 /* Property Grid Section */
 .property-grid-section {
-  padding: 80px 20px;
+  padding: 20px 20px 40px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -181,7 +181,7 @@
 
 /* Structure Info Section */
 .structure-info-section {
-  padding: 100px 20px;
+  padding: 60px 20px;
   background-color: rgba(246, 245, 240, 0.03);
   text-align: center;
 }
@@ -206,7 +206,7 @@
 
 /* Closing Statement */
 .closing-statement {
-  padding: 150px 20px;
+  padding: 60px 20px 100px;
   text-align: center;
   background-color: var(--color-dark);
 }

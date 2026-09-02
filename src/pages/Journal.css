@@ -8,7 +8,8 @@
 
 /* Hero Section */
 .journal-hero {
-  height: 100vh;
+  height: 60vh;
+  min-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +51,7 @@
 
 /* Asymmetrical Categories Grid */
 .journal-categories-section {
-  padding: 80px 5%;
+  padding: 20px 5% 80px;
   max-width: 1600px;
   margin: 0 auto;
 }

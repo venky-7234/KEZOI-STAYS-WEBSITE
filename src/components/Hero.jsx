@@ -5,7 +5,7 @@ import './Hero.css';
 
 const Hero = () => {
   const heroRef = useRef(null);
-  const [activePanel, setActivePanel] = useState(null);
+  const [activePanel, setActivePanel] = useState('live');
   const navigate = useNavigate();
 
   const handlePanelClick = (id, link, e) => {

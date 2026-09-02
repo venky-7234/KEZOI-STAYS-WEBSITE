@@ -158,10 +158,10 @@ const Journal = () => {
         <div className="journal-categories-grid">
           {categories.map((cat, index) => (
             <div className={`journal-category size-${cat.size}`} key={index}>
+              <h3 className="journal-category-name">{cat.name}</h3>
               <div className="journal-category-image-wrapper">
                 <img src={cat.image} alt={cat.name} className="journal-category-img" />
               </div>
-              <h3 className="journal-category-name">{cat.name}</h3>
             </div>
           ))}
         </div>

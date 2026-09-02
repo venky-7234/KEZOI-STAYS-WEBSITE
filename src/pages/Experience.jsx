@@ -66,7 +66,7 @@ const Experience = () => {
       <section className="exp-grid-section">
         <div className="exp-grid">
           {filteredExperiences.map(exp => (
-            <div className="exp-card placeholder-card" key={exp.id} style={{ minHeight: '500px', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px dashed rgba(212, 175, 55, 0.3)', backgroundColor: 'rgba(255,255,255,0.02)' }}>
+            <div className="exp-card placeholder-card" key={exp.id}>
               <span style={{ color: 'var(--color-gold)', opacity: 0.5, letterSpacing: '2px', fontSize: '0.9rem' }}>IMAGE PLACEHOLDER</span>
             </div>
           ))}
@@ -79,10 +79,10 @@ const Experience = () => {
       </div>
 
       {/* People Section */}
-      <section className="people-section" style={{ padding: '80px 20px', maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
+      <section className="people-section" style={{ padding: '40px 20px', maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
         <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2.5rem', marginBottom: '50px', color: 'var(--color-gold)' }}>THE PEOPLE BEHIND THE EXPERIENCE.</h2>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
-          {['The Homeowner', 'The Cook', 'The Care Partner', 'The Driver', 'The Guest'].map((person, index) => (
+          {['The Table Partner', 'The Care Partner', 'The Move Partner'].map((person, index) => (
             <div key={index} style={{
               background: 'rgba(246, 245, 240, 0.05)',
               border: '1px solid rgba(246, 245, 240, 0.1)',
@@ -97,10 +97,10 @@ const Experience = () => {
       </section>
 
       {/* Closing Statement */}
-      <section style={{ padding: '100px 20px', textAlign: 'center', backgroundColor: 'rgba(246, 245, 240, 0.02)' }}>
+      <section style={{ padding: '40px 20px 100px', textAlign: 'center', backgroundColor: 'rgba(246, 245, 240, 0.02)' }}>
         <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2.5rem', maxWidth: '900px', margin: '0 auto', lineHeight: '1.4', fontWeight: '400', color: 'var(--color-ivory)' }}>
           KEZOI IS BUILT BY PEOPLE.<br/>
-          Homes. Cooks. Drivers. Care teams. Creators. Guests.<br/>
+          <span style={{ fontSize: '1.4rem', fontWeight: '300', display: 'inline-block', margin: '10px 0' }}>Homes. Cooks. Drivers. Care teams. Creators. Guests.</span><br/>
           <span style={{ color: 'var(--color-gold)', marginTop: '20px', display: 'block', fontSize: '1.8rem' }}>A local ecosystem connected around one place: YOUR HOME.</span>
         </h2>
       </section>
