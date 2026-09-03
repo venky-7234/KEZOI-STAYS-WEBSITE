@@ -109,7 +109,6 @@
 /* Hover Effects */
 @media (min-width: 768px) {
   .hero-frame:hover {
-    flex: 1.5; /* Makes the panel expand horizontally */
     z-index: 10;
   }
 }

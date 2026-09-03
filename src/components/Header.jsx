@@ -79,6 +79,18 @@ const Header = () => {
       {/* Mobile Navigation Overlay */}
       <div className={`mobile-nav ${mobileMenuOpen ? 'open' : ''}`}>
         <div className="mobile-nav-pattern"></div>
+        <div className="mobile-nav-content">
+          <Link to="/" onClick={toggleMobileMenu}>Home</Link>
+          <Link to="/about" onClick={toggleMobileMenu}>Our Presence</Link>
+          <div className="mobile-nav-group">
+            <Link to="/experiences" className="mobile-nav-title" onClick={toggleMobileMenu} style={{ textDecoration: 'none' }}>Experiences</Link>
+            <Link to="/experiences/care" onClick={toggleMobileMenu}>KEZOI CARE</Link>
+            <Link to="/experiences/move" onClick={toggleMobileMenu}>KEZOI MOVE</Link>
+            <Link to="/experiences/table" onClick={toggleMobileMenu}>KEZOI TABLE</Link>
+          </div>
+          <Link to="/journal" onClick={toggleMobileMenu}>Journal</Link>
+          <Link to="/partner" onClick={toggleMobileMenu}>Partner with us</Link>
+        </div>
         <div className="mobile-nav-social">
           <a href="https://www.instagram.com/kezoistays?igsi=MTE1Z2pmNWU4OW45dA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <InstagramIcon />
@@ -89,20 +101,6 @@ const Header = () => {
           <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <LinkedinIcon />
           </a>
-        </div>
-        <div className="mobile-nav-content">
-          <Link to="/" onClick={toggleMobileMenu}>Home</Link>
-          <Link to="/about" onClick={toggleMobileMenu}>Our Presence</Link>
-          <div className="mobile-nav-group">
-            <Link to="/experiences" className="mobile-nav-title" onClick={toggleMobileMenu} style={{ textDecoration: 'none' }}>Experiences</Link>
-            <Link to="/experiences/care" onClick={toggleMobileMenu}>KEZOI CARE</Link>
-            <Link to="/experiences/move" onClick={toggleMobileMenu}>KEZOI MOVE</Link>
-            <Link to="/experiences/table" onClick={toggleMobileMenu}>KEZOI TABLE</Link>
-          </div>
-        <Link to="/journal" onClick={toggleMobileMenu}>Journal</Link>
-        <Link to="/partner" onClick={toggleMobileMenu}>Partner with us</Link>
-
-        {/* Book a Stay CTA removed from mobile menu */}
         </div>
       </div>
     </header>
