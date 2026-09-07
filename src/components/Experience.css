@@ -16,7 +16,7 @@
   background-size: cover; /* Fill the section without repeating the SVG canvas */
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.3; /* Increased opacity */
+  opacity: 0.1; /* Decreased opacity */
   z-index: -1;
   pointer-events: none;
 }

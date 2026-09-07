@@ -27,30 +27,47 @@
   color: var(--color-ivory);
 }
 
+.story-grid-wrapper {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
 .story-grid {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
   justify-content: flex-start;
-  max-width: 1200px;
-  margin: 0 auto 80px;
-  overflow-x: auto;
-  padding-bottom: 20px;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none; /* Firefox */
+  width: max-content;
 }
 
-.story-grid::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
-}
-
-@media (min-width: 800px) {
+@media (min-width: 769px) {
   .story-grid {
     justify-content: center;
     overflow-x: visible;
+    width: auto;
+  }
+  .duplicate-card {
+    display: none;
   }
 }
+
+@media (max-width: 768px) {
+  .story-grid {
+    animation: scrollMarquee 20s linear infinite;
+  }
+  
+  .story-grid:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scrollMarquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 10px)); }
+  }
+}
+
 
 .story-card {
   background: rgba(246, 245, 240, 0.03);
@@ -60,7 +77,6 @@
   transition: transform 0.3s ease, background 0.3s ease;
   min-width: 280px;
   flex: 0 0 auto; /* Prevent shrinking on mobile */
-  scroll-snap-align: center;
 }
 
 .story-card:hover {

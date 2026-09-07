@@ -5,6 +5,13 @@ import './KezoiStory.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
+const partners = [
+  { title: 'The Table Partner', image: '/table_partner.jpg' },
+  { title: 'The Care Partner', image: '/care_partner.jpg' },
+  { title: 'The Move Partner', image: '/move_partner_v2.jpg' },
+  { title: 'Our Property Partners', image: '/property_partner.jpg' }
+];
+
 const KezoiStory = () => {
   const sectionRef = useRef(null);
 
@@ -36,22 +43,32 @@ const KezoiStory = () => {
         <h2 className="story-title">THE PEOPLE BEHIND THE EXPERIENCE.</h2>
       </div>
       
-      <div className="story-grid">
-        {[
-          { title: 'The Table Partner', image: '/table_partner.jpg' },
-          { title: 'The Care Partner', image: '/care_partner.jpg' },
-          { title: 'The Move Partner', image: '/move_partner_v2.jpg' }
-        ].map((person, index) => (
-          <div className="story-card" key={index}>
-            <div className="story-card-image-container">
-              <div 
-                className="story-card-image"
-                style={{ backgroundImage: `url('${person.image}')` }}
-              ></div>
+      <div className="story-grid-wrapper">
+        <div className="story-grid">
+          {partners.map((person, index) => (
+            <div className="story-card" key={index}>
+              <div className="story-card-image-container">
+                <div 
+                  className="story-card-image"
+                  style={{ backgroundImage: `url('${person.image}')` }}
+                ></div>
+              </div>
+              <h3 className="story-card-title">{person.title}</h3>
             </div>
-            <h3 className="story-card-title">{person.title}</h3>
-          </div>
-        ))}
+          ))}
+          {/* Duplicated cards for mobile marquee loop */}
+          {partners.map((person, index) => (
+            <div className="story-card duplicate-card" key={`dup-${index}`}>
+              <div className="story-card-image-container">
+                <div 
+                  className="story-card-image"
+                  style={{ backgroundImage: `url('${person.image}')` }}
+                ></div>
+              </div>
+              <h3 className="story-card-title">{person.title}</h3>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="story-closing">
